@@ -27,7 +27,6 @@ public class Cliente {
     private String celular;
     private String Fecha;
     private String Banco;
-    private String rubro_empresa;
-      
+    private String rubro_empresa;     
 
 }
