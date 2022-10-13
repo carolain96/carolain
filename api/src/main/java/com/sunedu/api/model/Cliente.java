@@ -29,4 +29,5 @@ public class Cliente {
     private String Banco;
     private String rubro_empresa;
       
+
 }
