@@ -11,7 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import com.sunedu.api.model.Usuario;
-import com.sunedu.api.repositories.ClienteRepository;
+
 import com.sunedu.api.repositories.UsuarioRepository;
 
 @Controller

@@ -1,8 +1,6 @@
-package com.app.bancario.springappcore.integration.reniec;
+package com.sunedu.api.integration.reniec;
 
 
-
-import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,17 +16,13 @@ public class ReniecApi {
     public UserReniec findExitsUserByDni(String dni){
 
         UserReniec reniec = null;
-        String apiKey = System.getenv("API_KEY_RENIEC");
-
-        HashMap<String, String> uriVariables = new HashMap<>();
-
-        uriVariables.put("dni", dni);
-        uriVariables.put("apiKey", apiKey);
+        
 
 
         try {
 
-           reniec = restTemplate.getForObject("https://app-reniec.herokuapp.com/api/persona/dni={dni}&apiKey={apiKey}", UserReniec.class, uriVariables);
+           reniec = restTemplate.getForObject("https://app-reniec.herokuapp.com/api/persona/dni={dni}&apiKey=1354bc88-3dea-44b5-a090-08af31722829", UserReniec.class, dni);
+           
 
         } catch (Exception e) {
             

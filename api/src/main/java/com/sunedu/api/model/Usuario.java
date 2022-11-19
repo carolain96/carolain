@@ -1,12 +1,9 @@
 package com.sunedu.api.model;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
 import javax.persistence.Table;
 
-import org.springframework.beans.factory.annotation.Value;
 
-import io.micrometer.core.lang.Nullable;
 
 import javax.persistence.Id;
 

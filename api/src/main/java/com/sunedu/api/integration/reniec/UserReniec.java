@@ -1,4 +1,4 @@
-package com.app.bancario.springappcore.integration.reniec;
+package com.sunedu.api.integration.reniec;
 
 public class UserReniec {
     
